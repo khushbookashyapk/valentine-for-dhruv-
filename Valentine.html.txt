@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For Dhruv ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 220px;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#yesBtn {
+  background-color: #ff2e63;
+  color: white;
+}
+
+#noBtn {
+  background-color: white;
+  color: #ff2e63;
+  position: absolute;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="your-music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+  <!-- Add your photo here -->
+  <img src="your-photo.jpg" alt="Us ❤️">
+
+  <h1>Hey Dhruv ❤️</h1>
+
+  <p>
+    I don’t know when you became my favorite person…  
+    but everything feels better when you're around.  
+    Your smile, your care, your presence — means everything to me.  
+  </p>
+
+  <p>
+    You make my world softer, happier, and full of love.  
+    And I want more memories, more laughs, and more “us”.  
+  </p>
+
+  <h2>Will you be my Valentine? 💌</h2>
+
+  <button id="yesBtn" onclick="yesClicked()">YES 💖</button>
+  <button id="noBtn" onmouseover="moveButton()">NO 🙈</button>
+
+</div>
+
+<script>
+function yesClicked() {
+  document.body.innerHTML = `
+    <div style="display:flex;justify-content:center;align-items:center;height:100vh;background:#ff7eb3;color:white;font-family:Arial;text-align:center;">
+      <div>
+        <h1>I Love You Dhruv ❤️</h1>
+        <p>You just made Khushboo the happiest girl alive 💕</p>
+      </div>
+    </div>
+  `;
+}
+
+function moveButton() {
+  var btn = document.getElementById("noBtn");
+  btn.style.top = Math.random() * window.innerHeight + "px";
+  btn.style.left = Math.random() * window.innerWidth + "px";
+}
+</script>
+
+</body>
+</html>
